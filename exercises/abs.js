@@ -11,6 +11,12 @@
 
 // Your code :
 
+function abs = ('a');
+	if abs < 0
+		console.log(-abs);
+	else
+		console.log(abs);
+
 //* Begin of tests
 const assert = require('assert')
 
