@@ -7,6 +7,15 @@
  */
 
 
+function total(amount){
+	let tot = 0
+	let i = 0
+	for (i = 0; i < amount.length; ++i) {
+		tot=tot+amount[i];
+	}
+	return tot
+}
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -9,6 +9,25 @@
  */
 
 // Your code :
+function multiply(num1, num2) {
+  let sum = 0;
+  if (num1==0 || num2==0)
+  		return sum
+  for (let i = 0; i < Math.abs(num2); i++) {
+    sum += num1;
+  }
+
+  if (num1 < 0 && num2 < 0) {
+    	return Math.abs(sum);
+  	} else if (num2 < 0 ) {
+    	return -sum;
+ 	 } else {
+    	return sum;
+
+  
+  }
+}	
+	
 
 //* Begin of tests
 const assert = require('assert')
@@ -25,4 +44,5 @@ assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
+
 // End of tests */
