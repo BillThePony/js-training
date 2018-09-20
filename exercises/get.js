@@ -11,7 +11,6 @@
 
 // Your code :
 
-
 //* Begin of tests
 
 // End of tests */
