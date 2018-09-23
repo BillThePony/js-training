@@ -9,11 +9,17 @@
  * Example : "How are you ?" -> "How Are You ?"
  *
  */
-
-
+function jadenCase(str) {
+  var wordsArray = str.toLowerCase().split(/\s+/);
+  var upperCased = wordsArray.map(function(word) {
+    return word.charAt(0).toUpperCase() + word.substr(1);
+  });
+  return upperCased.join(" ");
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('You must write your own tests'), 'You Must Write Your Own Tests')
+
 // End of tests */
